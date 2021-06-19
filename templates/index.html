@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/stylePreg.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styleGulco.css')}}">
+    <title>Diabetes Entry</title>
+</head>
+<body>
+
+    <div class="entry_form">
+
+
+      <form action="{{url_for('predict')}}" method="POST" >
+
+
+
+            <div class="pregnancies">
+
+                <div class="label">
+                   <label for="Pregancies">
+                    How Many Time You Have Been Pregnant?
+                   </label>
+                </div>
+               
+                <div class="input">
+                    <input type="text" name="no_of_pregnant_time">
+                </div>
+            </div>
+
+
+            <div class="gulcose_level">
+
+                <div class="label">
+                    <label for="Gulcose_Level">
+                        What is Your Gulcose Level ?
+                    </label>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="gulcose_level">
+                </div>
+            </div>
+
+
+
+            <div class="blood_pressure">
+                <div class="label">
+                    <label for="Blood_pressure">
+                        What is Your Blood Pressure?
+                    </label>
+                </div>
+                
+                <div class="input">
+                    <input type="text" name="blood_pressure">
+                </div>
+            </div>
+
+
+
+
+            <div class="skin_thickness">
+
+                <div class="label">
+                    <label for="Skin_thickness">
+                        What is Your Skin Thickness?
+                    </label>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="skin_thickness">
+                </div>
+                
+            </div>
+
+
+
+            <div class="insulin_level">
+
+                <div class="label">
+                    <label for="Insulin_level">
+                        What is Your Insulin Level?
+                    </label>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="insulin_level">
+                </div>
+                
+            </div>
+
+
+
+            <div class="bmi">
+
+                <div class="label">
+                    <label for="Body_mass_index">
+                        What is Your Body Mass Index?<br>
+                        <span>(Body mass index (weight in kg/(height in m)^2))</span>
+                    </label>
+                </div>
+              
+                <div class="input">
+                    <input type="text" name="body_mass_index">
+                </div>
+                
+            </div>
+
+
+
+            <div class="pedigree_index">
+
+                <div class="label">
+                    <label for="Diabetic_pedigree_index">
+                        What is Your Diabetic Pedigree Index?
+                    </label>
+                </div>
+               
+                <div class="input">
+                    <input type="text" name="diabetic_pedigree_index">
+                </div>
+                
+            </div>
+
+
+
+            <div class="age">
+
+                <div class="label">
+                    <label for="Age">
+                        What is Your Age
+                    </label>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="age">
+                </div> 
+
+            </div>
+
+
+
+
+            <div class="submit">
+
+                <input type="submit" value="Check Result">
+
+            </div>
+
+      </form>
+    </div>
+    
+</body>
+</html>
