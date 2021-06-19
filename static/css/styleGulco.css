@@ -1,0 +1,63 @@
+.bmi,.pedigree_index,.age,.gulcose_level,.blood_pressure,.skin_thickness,.insulin_level,.pregnancies
+{
+    display:flex;
+}
+.label
+{
+    width: 70%;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Benne', serif;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(20, 12, 12);
+    text-shadow: 1.5px 1.5px 1px rgba(240, 226, 245, 0.6);
+}
+.input
+{
+ width: 35%;
+ margin-left: 10px;
+ 
+}
+input[type=text]
+{
+    border:2px solid grey;
+    border-radius:0px 15px 15px 0px;
+    width: 100%;
+    padding:0px 0 0px 10px;
+    color:white;
+    box-sizing: border-box;
+    border:2px solid white;
+    background:linear-gradient(to top left,#141414,#142017);
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: 'Benne', serif;
+}
+.bmi .label span
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+.submit 
+{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.submit input[type=submit]
+{
+    padding: 10px;
+    font-size: 18px;
+    border:2px solid grey;
+    background:linear-gradient(to top left,rgba(255,111,111,0.6),rgba(142,112,152,0.6));
+}
+.submit input[type=submit]:hover
+{
+    padding: 10px;
+    font-size: 18px;
+    border:2px solid rgb(61, 53, 53);
+    background:linear-gradient(to top left,rgba(136, 57, 57, 0.6),rgba(65, 47, 71, 0.6));
+    color: whitesmoke;
+}
